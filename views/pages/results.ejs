@@ -1,0 +1,15 @@
+<h2>Top Internship Recommendations</h2>
+<div class="card-container">
+  <% if (recommendations.length > 0) { %>
+    <% recommendations.forEach(intern => { %>
+      <div class="card">
+        <h3><%= intern.title %></h3>
+        <p><strong>Organisation:</strong> <%= intern.organisation %></p>
+        <p><strong>Sector:</strong> <%= intern.sector %></p>
+        <p><strong>Location:</strong> <%= intern.locations.join(", ") %></p>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p>No suitable internships found. Try adding more skills or sectors.</p>
+  <% } %>
+</div>

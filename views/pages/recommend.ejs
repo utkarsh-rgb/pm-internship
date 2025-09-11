@@ -1,0 +1,22 @@
+<div class="container py-5">
+  <h2 class="mb-4">Recommended Internships for <%= student.name %></h2>
+  <div class="row">
+    <% recommended.forEach(intern => { %>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold"><%= intern.title %></h5>
+            <p class="card-text"><strong>Organisation:</strong> <%= intern.organisation %></p>
+            <p class="card-text"><strong>Education:</strong> <%= intern.education %></p>
+            <p class="card-text"><strong>Skills:</strong> <%= intern.skills.join(", ") %></p>
+            <p class="card-text"><strong>Sector:</strong> <%= intern.sector %></p>
+            <p class="card-text"><strong>Locations:</strong> <%= intern.locations.join(", ") %></p>
+          </div>
+          <div class="card-footer text-center bg-white border-0">
+            <a href="/form" class="btn btn-primary btn-sm">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>

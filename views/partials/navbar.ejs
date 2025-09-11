@@ -1,0 +1,176 @@
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="/">
+      <i class="bi bi-building-fill me-2"></i>
+      PM Internship Scheme
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto" id="nav-links">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/">
+            <i class="bi bi-house-fill me-1"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/about">
+            <i class="bi bi-info-circle-fill me-1"></i> About
+          </a>
+        </li>
+   <li class="nav-item">
+  <a id="recommendLink" class="nav-link fw-semibold" href="#">
+    <i class="bi bi-star-fill me-1"></i> Recommendations
+  </a>
+</li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="/contact">
+            <i class="bi bi-envelope-fill me-1"></i> Contact
+          </a>
+        </li>
+        <!-- Dynamic Auth Buttons -->
+        <li class="nav-item ms-2" id="auth-buttons"></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Moving Government Header Ticker -->
+<div class="bg-primary text-white py-2 overflow-hidden">
+  <div class="moving-ticker">
+    <div class="ticker-content d-flex align-items-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
+           alt="Government of India Emblem" 
+           class="me-2" 
+           style="height: 25px; width: 25px; filter: brightness(0) invert(1);">
+      <span class="fw-bold me-4">Government of India | भारत सरकार</span>
+      <span class="me-4">🇮🇳</span>
+      <span class="me-4">Ministry of Corporate Affairs</span>
+      <span class="me-4">📞</span>
+      <span class="me-4">Helpline: 1800-123-4567</span>
+      <span class="me-4">✉️</span>
+      <span class="me-4">Email: internship@mca.gov.in</span>
+      <span class="me-4">🌟</span>
+      <span class="me-4">Empowering Youth • Building Future • Atmanirbhar Bharat</span>
+      <span class="me-4">🎯</span>
+      <span class="me-4">50,000+ Students Registered</span>
+      <span class="me-4">🏢</span>
+      <span class="me-4">2,500+ Partner Organizations</span>
+      <span class="me-4">🇮🇳</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.moving-ticker {
+  position: relative;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-flex;
+  animation: scroll-left 60s linear infinite;
+  padding-right: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+</style>
+<script>
+  // Navbar Auth Button Handling
+  const authButtons = document.getElementById("auth-buttons");
+
+  async function renderAuthButtons() {
+    const studentId = localStorage.getItem("studentId");
+    const studentName = localStorage.getItem("studentName");
+
+    if (!studentId || !studentName) {
+      // Not logged in
+      authButtons.innerHTML = `
+        <a class="btn btn-outline-light btn-sm me-2" href="/signup">
+          <i class="bi bi-person-plus-fill me-1"></i> Sign Up
+        </a>
+        <a class="btn btn-success btn-sm" href="/login">
+          <i class="bi bi-box-arrow-in-right me-1"></i> Login
+        </a>
+      `;
+      return;
+    }
+
+    try {
+      // Call backend API to check if student applied
+      const response = await fetch(`/api/check-application/${studentId}`);
+      const data = await response.json();
+
+      if (data.applied) {
+        // Student already applied
+        authButtons.innerHTML = `
+          <a class="btn btn-outline-light btn-sm me-2" href="/application/${studentId}">
+            Applied
+          </a>
+          <button class="btn btn-danger btn-sm" onclick="logout()">
+            <i class="bi bi-box-arrow-right me-1"></i> Logout
+          </button>
+        `;
+      } else {
+        // Student not applied
+        authButtons.innerHTML = `
+          <a class="btn btn-outline-light btn-sm me-2" href="/form">
+            <i class="bi bi-person-plus-fill me-1"></i> Apply Now
+          </a>
+          <button class="btn btn-danger btn-sm" onclick="logout()">
+            <i class="bi bi-box-arrow-right me-1"></i> Logout
+          </button>
+        `;
+      }
+    } catch (err) {
+      console.error("Error checking application:", err);
+      // fallback
+      authButtons.innerHTML = `
+        <a class="btn btn-outline-light btn-sm me-2" href="/form">
+          <i class="bi bi-person-plus-fill me-1"></i> Apply Now
+        </a>
+        <button class="btn btn-danger btn-sm" onclick="logout()">
+          <i class="bi bi-box-arrow-right me-1"></i> Logout
+        </button>
+      `;
+    }
+  }
+
+  function logout() {
+    localStorage.removeItem("studentId");
+    localStorage.removeItem("studentName");
+    window.location.href = "/"; // redirect to home
+  }
+
+   const studentId = localStorage.getItem("studentId");
+ const recommendLink = document.getElementById("recommendLink");
+
+  if(studentId) {
+    recommendLink.href = `/recommend/${studentId}`;
+  } else {
+    recommendLink.href = "/recommend"; // fallback
+  }
+
+  // Render on page load
+  document.addEventListener("DOMContentLoaded", renderAuthButtons);
+</script>

@@ -1,0 +1,123 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white text-center py-4">
+          <h2 class="card-title mb-0 fs-3 fw-bold">Apply for Internship</h2>
+          <p class="mb-0 mt-2 opacity-75">Fill out the form below to get started</p>
+        </div>
+        <div class="card-body p-4">
+          <form id="internshipForm" novalidate>
+
+            <!-- Hidden student_id (from localStorage) -->
+            <input type="hidden" name="student_id" id="student_id">
+
+            <!-- Education -->
+            <div class="mb-4">
+              <label for="education" class="form-label fw-semibold">
+                Education
+              </label>
+              <input 
+                type="text" 
+                class="form-control form-control-lg" 
+                id="education" 
+                name="education" 
+                placeholder="e.g., B.Tech Computer Science, 3rd Year"
+                required
+              >
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-4">
+              <label for="skills" class="form-label fw-semibold">Skills</label>
+              <input 
+                type="text" 
+                class="form-control form-control-lg" 
+                id="skills" 
+                name="skills" 
+                placeholder="e.g., JavaScript, Python, Data Analysis"
+                required
+              >
+              <small class="form-text text-muted">Separate multiple skills with commas</small>
+            </div>
+
+            <!-- Interests -->
+            <div class="mb-4">
+              <label for="interests" class="form-label fw-semibold">Interests</label>
+              <input 
+                type="text" 
+                class="form-control form-control-lg" 
+                id="interests" 
+                name="interests" 
+                placeholder="e.g., Web Development, Machine Learning, Marketing"
+              >
+              <small class="form-text text-muted">Optional</small>
+            </div>
+
+            <!-- Location -->
+            <div class="mb-4">
+              <label for="location" class="form-label fw-semibold">Preferred Location</label>
+              <input 
+                type="text" 
+                class="form-control form-control-lg" 
+                id="location" 
+                name="location" 
+                placeholder="e.g., Mumbai, Delhi, Remote"
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg py-3 fw-semibold">
+                <i class="bi bi-send-fill me-2"></i>Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer bg-light text-center py-3">
+          <small class="text-muted">
+            <i class="bi bi-shield-check text-success me-1"></i>
+            Your information is secure and will only be used for internship matching
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('internshipForm');
+
+  // Fill hidden student_id from localStorage
+  document.getElementById("student_id").value = localStorage.getItem("studentId");
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('/form', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+});
+
+const result = await response.json();
+
+if (result.success) {
+  console.log('✅ Application updated successfully for student ID:', data.student_id);
+  window.location.href = '/success';
+} else {
+  console.error('❌ Error updating application:', result.error);
+  alert('Error submitting the form. Please try again.');
+}
+
+
+    } catch(err) {
+      console.error('Error:', err);
+      alert('Server error. Please try again later.');
+    }
+  });
+</script>

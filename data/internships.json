@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "title": "Data Analytics Intern",
+    "organisation": "GovTech Labs",
+    "education": "Bachelors",
+    "skills": ["python", "sql", "excel"],
+    "sector": "Data",
+    "locations": ["Delhi", "Remote"]
+  },
+  {
+    "id": 2,
+    "title": "Web Development Intern",
+    "organisation": "Startup India",
+    "education": "Bachelors",
+    "skills": ["html", "css", "javascript"],
+    "sector": "IT",
+    "locations": ["Remote", "Mumbai"]
+  },
+  {
+    "id": 3,
+    "title": "Design Intern",
+    "organisation": "Creative Minds",
+    "education": "Any",
+    "skills": ["figma", "canva"],
+    "sector": "Design",
+    "locations": ["Remote"]
+  },
+  {
+    "id": 4,
+    "title": "Marketing Intern",
+    "organisation": "BrandBuzz",
+    "education": "Bachelors",
+    "skills": ["marketing", "seo", "content creation"],
+    "sector": "Marketing",
+    "locations": ["Vadodara"]
+  },
+  {
+    "id": 5,
+    "title": "Frontend Developer Intern",
+    "organisation": "CodeCraft",
+    "education": "Bachelors",
+    "skills": ["html", "css", "javascript", "react"],
+    "sector": "IT",
+    "locations": ["Vadodara", "Remote"]
+  },
+  {
+    "id": 6,
+    "title": "Graphic Design Intern",
+    "organisation": "DesignWorks",
+    "education": "Any",
+    "skills": ["photoshop", "illustrator", "canva"],
+    "sector": "Design",
+    "locations": ["Vadodara"]
+  },
+  {
+    "id": 7,
+    "title": "Data Science Intern",
+    "organisation": "DataSolve",
+    "education": "Bachelors",
+    "skills": ["python", "pandas", "machine learning"],
+    "sector": "Data",
+    "locations": ["Vadodara", "Remote"]
+  },
+  {
+    "id": 8,
+    "title": "Content Writing Intern",
+    "organisation": "WriteRight",
+    "education": "Bachelors",
+    "skills": ["writing", "seo", "blogging"],
+    "sector": "Content",
+    "locations": ["Vadodara"]
+  },
+  {
+    "id": 9,
+    "title": "Backend Developer Intern",
+    "organisation": "TechFlow",
+    "education": "Bachelors",
+    "skills": ["node.js", "express", "mongodb"],
+    "sector": "IT",
+    "locations": ["Vadodara", "Remote"]
+  },
+  {
+    "id": 10,
+    "title": "Digital Marketing Intern",
+    "organisation": "AdBoost",
+    "education": "Bachelors",
+    "skills": ["social media", "ads", "seo"],
+    "sector": "Marketing",
+    "locations": ["Vadodara"]
+  },
+  {
+    "id": 11,
+    "title": "UI/UX Design Intern",
+    "organisation": "PixelPerfect",
+    "education": "Any",
+    "skills": ["figma", "adobe xd", "ui design"],
+    "sector": "Design",
+    "locations": ["Vadodara", "Remote"]
+  },
+  {
+    "id": 12,
+    "title": "Business Analyst Intern",
+    "organisation": "BizAnalytics",
+    "education": "Bachelors",
+    "skills": ["excel", "data analysis", "sql"],
+    "sector": "Business",
+    "locations": ["Vadodara"]
+  },
+  {
+    "id": 13,
+    "title": "SEO Intern",
+    "organisation": "OptiRank",
+    "education": "Bachelors",
+    "skills": ["seo", "python", "content marketing"],
+    "sector": "Marketing",
+    "locations": ["parul university, limda,waghodia"]
+  }
+]
