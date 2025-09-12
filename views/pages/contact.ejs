@@ -1,0 +1,68 @@
+<!-- Contact Hero Section -->
+<section class="py-5 text-white position-relative" style="background: linear-gradient(135deg, #138808 0%, #FF9933 100%);">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+    <p class="lead fs-4 mb-0">We’re here to help you with any queries about the PM Internship Scheme</p>
+  </div>
+</section>
+
+<!-- Contact Form & Info -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="card shadow-sm border-0 p-4">
+          <h3 class="fw-bold mb-4 text-primary">Send Us a Message</h3>
+          <form action="/contact" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-semibold">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Brief subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg fw-bold">
+              <i class="bi bi-envelope-fill me-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="card shadow-sm border-0 p-4 h-100">
+          <h3 class="fw-bold mb-4 text-primary">Contact Information</h3>
+          <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Ministry of Corporate Affairs, Government of India</p>
+          <p class="text-muted mb-3"><i class="bi bi-telephone-fill me-2"></i> 1800-XXX-XXXX</p>
+          <p class="text-muted mb-3"><i class="bi bi-envelope-fill me-2"></i>internship@mca.gov.in</p>
+          <p class="text-muted mb-3"><i class="bi bi-clock-fill me-2"></i>Mon - Fri: 9:00 AM - 6:00 PM</p>
+
+          <!-- Optional Map -->
+          <div class="mt-4">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d18151.98536436206!2d77.20642244692421!3d28.614220115070328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMinistry%20of%20Corporate%20Affairs%2C%20Government%20of%20India%20map!5e0!3m2!1sen!2sin!4v1757663514201!5m2!1sen!2sin"  
+            width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

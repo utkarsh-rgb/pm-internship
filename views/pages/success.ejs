@@ -1,64 +1,37 @@
 <div class="container py-5">
   <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8">
-      <div class="card border-0 shadow-lg text-center">
+    <div class="col-md-6">
+      <div class="card text-center shadow">
         <!-- Header -->
-        <div class="card-header py-5" style="background: linear-gradient(135deg, #28a745, #20c997);">
-          <div class="text-white">
-            <div class="mb-4">
-              <div class="success-icon mx-auto d-flex align-items-center justify-content-center" 
-                   style="width: 100px; height: 100px; background: rgba(255,255,255,0.2); border-radius: 50%; animation: pulse 2s infinite;">
-                <i class="bi bi-check-circle-fill text-white" style="font-size: 3rem;"></i>
-              </div>
-            </div>
-            <h2 class="fw-bold mb-2">🎉 Application Submitted!</h2>
-            <p class="mb-0 opacity-90">आपका आवेदन सफलतापूर्वक जमा हो गया।</p>
-          </div>
+        <div class="card-header bg-success text-white py-4">
+          <i class="bi bi-check-circle-fill" style="font-size: 3rem;"></i>
+          <h3 class="mt-2">Application Submitted!</h3>
+          <p class="mb-0">आपका आवेदन सफलतापूर्वक जमा हो गया।</p>
         </div>
 
         <!-- Body -->
-        <div class="card-body py-5">
-          <p class="lead mb-4">
-            Thank you! Your application for the PM Internship Scheme has been received. 
-            You can now go back home or view internships matched for you.
+        <div class="card-body">
+          <p class="mb-4">
+            Thank you! Your application for the PM Internship Scheme has been received.
           </p>
-
-        <!-- Action Buttons -->
-<div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
-  <a href="/" class="btn btn-primary btn-lg px-4 py-2 fw-semibold">
-    <i class="bi bi-house-door-fill me-2"></i>Go Home
-  </a>
-  <a id="recommendBtn" href="#" class="btn btn-success btn-lg px-4 py-2 fw-semibold">
-    <i class="bi bi-star-fill me-2"></i>Your Recommended Internships
-  </a>
-</div>
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <a href="/" class="btn btn-primary">
+              <i class="bi bi-house-door-fill me-1"></i>Go Home
+            </a>
+            <a id="recommendBtn" href="#" class="btn btn-success">
+              <i class="bi bi-star-fill me-1"></i>Your Recommended Internships
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<style>
-@keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
-}
-
-.success-icon:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-</style>
 <script>
-  // Get the student ID from localStorage
+  // Set recommendations link based on studentId
   const studentId = localStorage.getItem("studentId");
-    console.log(studentId);
-  // Set the correct href for the recommendations button
   const recommendBtn = document.getElementById("recommendBtn");
-  if(studentId) {
-    recommendBtn.href = `/recommend/${studentId}`;
-  } else {
-    recommendBtn.href = "/recommend"; // fallback if studentId not found
-  }
+  recommendBtn.href = studentId ? `/recommend/${studentId}` : "/recommend";
 </script>
+

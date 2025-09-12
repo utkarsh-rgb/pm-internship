@@ -2,13 +2,14 @@ const express = require("express");
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 const mysql = require("mysql2");
-
 const app = express();
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.json());
+app.use(express.static('public'));
+
+app.use(express.json()); 
 
 // EJS setup
 app.set("view engine", "ejs");
@@ -70,6 +71,15 @@ app.post("/form", async (req, res) => {
 app.get("/success", (req, res) => {
   res.render("success", { title: "Application Submitted" });
 });
+// About page
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" });
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact", { title: "Contact" });
+});
+
 
 // Signup page
 app.get("/signup", (req, res) => {
@@ -133,13 +143,31 @@ app.post("/login", async (req, res) => {
 app.get("/api/check-application/:studentId", async (req, res) => {
   try {
     const studentId = req.params.studentId;
-    const [results] = await db.query("SELECT * FROM applications WHERE id=? LIMIT 1", [studentId]);
-    res.json({ applied: results.length > 0 });
+
+    const [results] = await db.query(
+      "SELECT skills, interests, location FROM applications WHERE id=? LIMIT 1",
+      [studentId]
+    );
+
+    if (results.length === 0) {
+      return res.json({ applied: "no" }); // student not found
+    }
+
+    const app = results[0];
+
+    // Check if skills, interests, and location are not null and not empty
+    const hasApplied =
+      app.skills && app.skills !== "null" &&
+      app.interests && app.interests !== "null" &&
+      app.location && app.location.trim() !== "";
+
+    res.json({ applied: hasApplied ? "yes" : "no" });
   } catch (err) {
     console.error("❌ Check application error:", err);
     res.status(500).json({ error: "Database error" });
   }
 });
+
 
 app.post("/api/edit-application/:studentId", async (req, res) => {
   try {

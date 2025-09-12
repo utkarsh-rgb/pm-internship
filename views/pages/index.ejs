@@ -1,151 +1,123 @@
-<div class="container my-3">
-  <h5 id="welcomeText" class="display-6 fw-bold text-primary">
-    Welcome Guest
-  </h5>
-  <p class="lead text-muted">We’re glad to have you here</p>
+<div class="container my-3 text-center text-md-start">
+  <h5 id="welcomeText" class="h3 fw-bold text-primary mb-1">Welcome Guest</h5>
+  <p class="small text-muted mb-3">We’re glad to have you here</p>
 </div>
 
-<!-- Hero Section with Indian Flag Theme -->
-<section class="hero position-relative" style="background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 35%, #138808 100%); min-height: 90vh;">
-  
-<div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.1);"></div>
-  <div class="container position-relative py-5 d-flex align-items-center min-vh-75">
+<!-- Hero Section -->
+<section class="hero position-relative" style="background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 35%, #138808 100%); min-height: 70vh;">
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.05);"></div>
+  <div class="container position-relative py-4 d-flex align-items-center min-vh-50">
     <div class="row align-items-center">
-      <div class="col-lg-7">
-        <div class="text-center text-lg-start">
-          <div class="mb-4">
-            <span class="badge bg-success fs-6 px-4 py-2 mb-3">
-              <i class="bi bi-flag-fill me-2"></i>भारत सरकार | Government of India
-            </span>
-          </div>
-          <h1 class="display-2 fw-bold text-dark mb-4" style="text-shadow: 2px 2px 4px rgba(255,255,255,0.8);">
-            PM Internship Scheme
-            <div class="text-primary fs-3 mt-2">प्रधानमंत्री इंटर्नशिप योजना</div>
-          </h1>
-          <p class="lead fs-4 text-dark mb-5" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
-            <strong>Empowering the youth of India through opportunities.</strong><br>
-            Our mission is to connect students across rural, tribal, and urban regions with meaningful internships that shape the future of our nation.
-          </p>
-          <div class="d-flex flex-column flex-md-row gap-3 justify-content-center justify-content-lg-start">
-            <a href="/form" class="btn btn-success btn-lg px-5 py-3 fw-bold fs-5 shadow-lg">
-              <i class="bi bi-rocket-takeoff-fill me-2"></i>Start Your Journey
-            </a>
-            <a href="/about" class="btn btn-outline-dark btn-lg px-5 py-3 fw-semibold fs-5">
-              <i class="bi bi-info-circle-fill me-2"></i>Learn More
-            </a>
-          </div>
+      <div class="col-lg-7 text-center text-lg-start">
+        <span class="badge bg-success fs-6 px-3 py-1 mb-2 d-inline-block">
+          <i class="bi bi-flag-fill me-1"></i>भारत सरकार | Government of India
+        </span>
+        <h1 class="h2 fw-bold text-dark mb-3" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.7);">
+          PM Internship Scheme
+          <div class="text-primary fs-5 mt-1">प्रधानमंत्री इंटर्नशिप योजना</div>
+        </h1>
+        <p class="small text-dark mb-3" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.7);">
+          Empowering the youth of India through opportunities.<br>
+          Connecting students across rural, tribal, and urban regions with meaningful internships.
+        </p>
+
+        <!-- Smaller Buttons -->
+        <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start">
+          <a href="/form" class="btn btn-success btn-sm px-3 py-1 fw-bold shadow-sm" style="min-width: 120px;">
+            <i class="bi bi-rocket-takeoff-fill me-1"></i>Start
+          </a>
+          <a href="/about" class="btn btn-outline-dark btn-sm px-3 py-1 fw-semibold shadow-sm" style="min-width: 120px;">
+            <i class="bi bi-info-circle-fill me-1"></i>Learn
+          </a>
         </div>
       </div>
-      <div class="col-lg-5 text-center">
-        <div class="position-relative">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
-               alt="Government of India Emblem" 
-               class="img-fluid mb-4" 
-               style="max-height: 200px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));">
-          <div class="ashoka-chakra position-absolute top-50 start-50 translate-middle" 
-               style="width: 100px; height: 100px; border: 3px solid #000080; border-radius: 50%; animation: rotate 20s linear infinite;">
-            <div class="position-absolute top-50 start-50 translate-middle w-100 h-100">
-              <div class="position-absolute top-0 start-50 translate-middle-x bg-dark" style="width: 2px; height: 50px;"></div>
-              <div class="position-absolute top-50 end-0 translate-middle-y bg-dark" style="width: 50px; height: 2px;"></div>
-              <div class="position-absolute bottom-0 start-50 translate-middle-x bg-dark" style="width: 2px; height: 50px;"></div>
-              <div class="position-absolute top-50 start-0 translate-middle-y bg-dark" style="width: 50px; height: 2px;"></div>
-            </div>
-          </div>
-        </div>
+      <div class="col-lg-5 text-center mt-3 mt-lg-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
+             alt="Government of India Emblem" 
+             class="img-fluid mb-2" 
+             style="max-height: 300px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));">
       </div>
     </div>
   </div>
 </section>
+<!-- Image Carousel Section -->
+<div class="carousel-container" style="position: relative; width: 100%; max-width: 600px; margin: auto; overflow: hidden; border-radius: 10px;">
+  
+  <!-- Images -->
+  <img src="/images/gov3.jpg" class="carousel-image active" style="width:100%; position:absolute; top:0; left:0; opacity:1; transition: opacity 0.5s;">
+  <img src="/images/gov2.jpg" class="carousel-image" style="width:100%; position:absolute; top:0; left:0; opacity:0; transition: opacity 0.5s;">
+  <img src="/images/gov1.jpg" class="carousel-image" style="width:100%; position:absolute; top:0; left:0; opacity:0; transition: opacity 0.5s;">
+  <!-- Add more images if needed -->
+
+  <!-- Navigation Buttons -->
+  <button class="prev" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; font-size:18px; padding:8px; border-radius:50%; cursor:pointer;">&#10094;</button>
+  <button class="next" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); background:rgba(0,0,0,0.5); color:white; border:none; font-size:18px; padding:8px; border-radius:50%; cursor:pointer;">&#10095;</button>
+</div>
+
+<script>
+  const images = document.querySelectorAll('.carousel-image');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let current = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + images.length) % images.length;
+    showImage(current);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  }, 3000);
+</script>
+
 
 <!-- Statistics Section -->
-<section class="py-5 bg-white">
+<section class="py-4 bg-white">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold text-primary mb-3">Transforming India's Youth</h2>
-      <p class="lead text-muted">Making a real impact across the nation</p>
+    <div class="text-center mb-4">
+      <h2 class="h4 fw-bold text-primary mb-1">Transforming India's Youth</h2>
+      <p class="small text-muted">Making a real impact across the nation</p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="card border-0 shadow-sm h-100 p-4">
-          <div class="text-success mb-3">
-            <i class="bi bi-people-fill" style="font-size: 3rem;"></i>
-          </div>
-          <h3 class="fw-bold text-primary">50,000+</h3>
-          <p class="text-muted mb-0">Students Registered</p>
+    <div class="row g-3 text-center text-sm-start">
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm h-100 p-3">
+          <div class="text-success mb-2"><i class="bi bi-people-fill fs-3"></i></div>
+          <h5 class="fw-bold text-primary mb-0">50,000+</h5>
+          <p class="small text-muted mb-0">Students Registered</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="card border-0 shadow-sm h-100 p-4">
-          <div class="text-warning mb-3">
-            <i class="bi bi-building-fill" style="font-size: 3rem;"></i>
-          </div>
-          <h3 class="fw-bold text-primary">2,500+</h3>
-          <p class="text-muted mb-0">Partner Organizations</p>
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm h-100 p-3">
+          <div class="text-warning mb-2"><i class="bi bi-building-fill fs-3"></i></div>
+          <h5 class="fw-bold text-primary mb-0">2,500+</h5>
+          <p class="small text-muted mb-0">Partner Organizations</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="card border-0 shadow-sm h-100 p-4">
-          <div class="text-info mb-3">
-            <i class="bi bi-geo-alt-fill" style="font-size: 3rem;"></i>
-          </div>
-          <h3 class="fw-bold text-primary">28</h3>
-          <p class="text-muted mb-0">States & UTs Covered</p>
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm h-100 p-3">
+          <div class="text-info mb-2"><i class="bi bi-geo-alt-fill fs-3"></i></div>
+          <h5 class="fw-bold text-primary mb-0">28</h5>
+          <p class="small text-muted mb-0">States & UTs Covered</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="card border-0 shadow-sm h-100 p-4">
-          <div class="text-danger mb-3">
-            <i class="bi bi-award-fill" style="font-size: 3rem;"></i>
-          </div>
-          <h3 class="fw-bold text-primary">95%</h3>
-          <p class="text-muted mb-0">Success Rate</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section class="py-5" style="background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold text-dark mb-3">
-        Why Choose PM Internship Scheme?
-        <div class="text-primary fs-4 mt-2">क्यों चुनें पीएम इंटर्नशिप योजना?</div>
-      </h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="card border-0 shadow-lg h-100">
-          <div class="card-body p-4 text-center">
-            <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-              <i class="bi bi-globe-asia-australia" style="font-size: 2rem;"></i>
-            </div>
-            <h4 class="fw-bold mb-3">Pan-India Reach</h4>
-            <p class="text-muted">Connect with opportunities across all states, from bustling metros to remote villages. No location barrier, only possibilities.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card border-0 shadow-lg h-100">
-          <div class="card-body p-4 text-center">
-            <div class="bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-              <i class="bi bi-cpu-fill" style="font-size: 2rem;"></i>
-            </div>
-            <h4 class="fw-bold mb-3">AI-Powered Matching</h4>
-            <p class="text-muted">Advanced recommendation engine matches your skills, interests, and career goals with the perfect internship opportunities.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card border-0 shadow-lg h-100">
-          <div class="card-body p-4 text-center">
-            <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-              <i class="bi bi-shield-check-fill" style="font-size: 2rem;"></i>
-            </div>
-            <h4 class="fw-bold mb-3">Government Verified</h4>
-            <p class="text-muted">All partner organizations and internships are verified by government authorities ensuring quality and authenticity.</p>
-          </div>
+      <div class="col-6 col-md-3">
+        <div class="card border-0 shadow-sm h-100 p-3">
+          <div class="text-danger mb-2"><i class="bi bi-award-fill fs-3"></i></div>
+          <h5 class="fw-bold text-primary mb-0">95%</h5>
+          <p class="small text-muted mb-0">Success Rate</p>
         </div>
       </div>
     </div>
@@ -153,12 +125,12 @@
 </section>
 
 <!-- Call to Action -->
-<section class="py-5 text-white position-relative" style="background: linear-gradient(135deg, #138808 0%, #FF9933 100%);">
-  <div class="container text-center">
-    <h2 class="display-4 fw-bold mb-4">Ready to Shape Your Future?</h2>
-    <p class="lead fs-4 mb-5">Join thousands of students already benefiting from the PM Internship Scheme</p>
-    <a href="/form" class="btn btn-light btn-lg px-5 py-3 fw-bold fs-5 shadow-lg">
-      <i class="bi bi-arrow-right-circle-fill me-2"></i>Apply Now - It's Free!
+<section class="py-4 text-white text-center" style="background: linear-gradient(135deg, #138808 0%, #FF9933 100%);">
+  <div class="container">
+    <h3 class="fw-bold mb-2">Ready to Shape Your Future?</h3>
+    <p class="small mb-3">Join thousands of students already benefiting from the PM Internship Scheme</p>
+    <a href="/form" class="btn btn-light btn-sm px-3 py-1 fw-bold shadow-sm">
+      <i class="bi bi-arrow-right-circle-fill me-1"></i>Apply Now
     </a>
   </div>
 </section>
@@ -168,17 +140,14 @@
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
-.min-vh-75 {
-  min-height: 75vh;
-}
+.min-vh-50 { min-height: 50vh; }
 </style>
 
-
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const studentName = localStorage.getItem("studentName");
-    if (studentName) {
-      document.getElementById("welcomeText").textContent = "Welcome " + studentName;
-    }
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  const studentName = localStorage.getItem("studentName");
+  if (studentName) {
+    document.getElementById("welcomeText").textContent = "Welcome " + studentName;
+  }
+});
 </script>
