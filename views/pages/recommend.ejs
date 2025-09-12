@@ -1,22 +1,76 @@
 <div class="container py-5">
-  <h2 class="mb-4">Recommended Internships for <%= student.name %></h2>
-  <div class="row">
-    <% recommended.forEach(intern => { %>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold"><%= intern.title %></h5>
-            <p class="card-text"><strong>Organisation:</strong> <%= intern.organisation %></p>
-            <p class="card-text"><strong>Education:</strong> <%= intern.education %></p>
-            <p class="card-text"><strong>Skills:</strong> <%= intern.skills.join(", ") %></p>
-            <p class="card-text"><strong>Sector:</strong> <%= intern.sector %></p>
-            <p class="card-text"><strong>Locations:</strong> <%= intern.locations.join(", ") %></p>
-          </div>
-          <div class="card-footer text-center bg-white border-0">
-            <a href="/form" class="btn btn-primary btn-sm">Apply Now</a>
+  <div class="text-center mb-4">
+    <h2>Recommended Internships for <%= student.name %></h2>
+    <p class="text-muted">Found <%= recommended.length %> internship<%= recommended.length !== 1 ? 's' : '' %> matching your profile</p>
+  </div>
+
+  <% if (recommended.length === 0) { %>
+    <div class="alert alert-info text-center">
+      <i class="bi bi-info-circle me-2"></i>No internships found matching your criteria. Please try adjusting your preferences.
+    </div>
+  <% } else { %>
+    <div class="row g-4">
+      <% recommended.forEach((intern, index) => { %>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><%= intern.title %></h5>
+              <p class="mb-1"><i class="bi bi-building me-2"></i><strong><%= intern.organisation %></strong></p>
+              <p class="mb-1"><i class="bi bi-mortarboard me-2"></i><%= intern.education %></p>
+              <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>
+                <% if (intern.locations.length <= 2) { %>
+                  <%= intern.locations.join(", ") %>
+                <% } else { %>
+                  <%= intern.locations.slice(0, 2).join(", ") %> +<%= intern.locations.length - 2 %> more
+                <% } %>
+              </p>
+              <p class="mb-3"><i class="bi bi-briefcase me-2"></i><span class="badge bg-secondary"><%= intern.sector %></span></p>
+
+              <div class="mb-3">
+                <h6 class="fw-semibold">Skills Required:</h6>
+                <% intern.skills.slice(0,4).forEach(skill => { %>
+                  <span class="badge bg-primary me-1 mb-1"><%= skill %></span>
+                <% }) %>
+                <% if (intern.skills.length > 4) { %>
+                  <span class="badge bg-secondary">+<%= intern.skills.length - 4 %> more</span>
+                <% } %>
+              </div>
+            </div>
+
+            <div class="card-footer bg-white">
+              <a href="/form?internship=<%= encodeURIComponent(intern.title) %>&org=<%= encodeURIComponent(intern.organisation) %>" class="btn btn-primary w-100 mb-2">
+                Apply Now
+              </a>
+              <button class="btn btn-outline-secondary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#details-<%= index %>">
+                View Details
+              </button>
+              <div class="collapse mt-2" id="details-<%= index %>">
+                <div class="card card-body p-2">
+                  <p class="mb-1"><strong>All Skills:</strong> <%= intern.skills.join(", ") %></p>
+                  <% if (intern.locations.length > 2) { %>
+                    <p class="mb-0"><strong>All Locations:</strong> <%= intern.locations.join(", ") %></p>
+                  <% } %>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    <% }) %>
-  </div>
+      <% }) %>
+    </div>
+  <% } %>
 </div>
+
+<style>
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+</style>

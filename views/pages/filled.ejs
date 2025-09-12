@@ -1,19 +1,101 @@
 <div class="container py-5">
   <h2 class="mb-4">Your Application Details</h2>
 
-  <ul class="list-group">
-    <li class="list-group-item"><strong>Name:</strong> <%= application.name %></li>
-    <li class="list-group-item"><strong>Email:</strong> <%= application.email %></li>
-    <li class="list-group-item"><strong>Education:</strong> <%= application.education %></li>
-    <li class="list-group-item"><strong>Skills:</strong> <%= application.skills %></li>
-    <li class="list-group-item"><strong>Interests:</strong> <%= application.interests %></li>
-    <li class="list-group-item"><strong>Location:</strong> <%= application.location %></li>
-    <li class="list-group-item"><strong>Submitted At:</strong> <%= new Date(application.created_at).toLocaleString() %></li>
-  </ul>
+  <form id="applicationForm">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <strong>Name:</strong> <%= application.name %>
+      </li>
+      <li class="list-group-item">
+        <strong>Email:</strong> <%= application.email %>
+      </li>
+      <li class="list-group-item">
+        <strong>Education:</strong>
+        <span class="display-text"><%= application.education %></span>
+        <input type="text" name="education" class="form-control edit-field d-none" value="<%= application.education %>">
+      </li>
+      <li class="list-group-item">
+        <strong>Skills:</strong>
+        <span class="display-text"><%= application.skills.join(", ") %></span>
+        <input type="text" name="skills" class="form-control edit-field d-none" value="<%= application.skills.join(", ") %>">
+        <small class="text-muted">Comma-separated</small>
+      </li>
+      <li class="list-group-item">
+        <strong>Interests:</strong>
+        <span class="display-text"><%= application.interests.join(", ") %></span>
+        <input type="text" name="interests" class="form-control edit-field d-none" value="<%= application.interests.join(", ") %>">
+        <small class="text-muted">Comma-separated</small>
+      </li>
+      <li class="list-group-item">
+        <strong>Location:</strong>
+        <span class="display-text"><%= application.location %></span>
+        <input type="text" name="location" class="form-control edit-field d-none" value="<%= application.location %>">
+      </li>
+      <li class="list-group-item">
+        <strong>Submitted At:</strong> <%= new Date(application.created_at).toLocaleString() %>
+      </li>
+    </ul>
 
-  <div class="mt-4">
-    <a href="/" class="btn btn-primary">
-      <i class="bi bi-house-door-fill me-2"></i>Back Home
-    </a>
-  </div>
+    <div class="mt-4 d-flex gap-2">
+      <button type="button" id="editBtn" class="btn btn-warning">Edit</button>
+      <button type="submit" id="saveBtn" class="btn btn-success d-none">Save</button>
+      <button type="button" id="cancelBtn" class="btn btn-secondary d-none">Cancel</button>
+    </div>
+  </form>
 </div>
+
+<script>
+  const editBtn = document.getElementById("editBtn");
+  const saveBtn = document.getElementById("saveBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const editFields = document.querySelectorAll(".edit-field");
+  const displayTexts = document.querySelectorAll(".display-text");
+  const form = document.getElementById("applicationForm");
+
+  editBtn.addEventListener("click", () => {
+    editFields.forEach(f => f.classList.remove("d-none"));
+    displayTexts.forEach(d => d.classList.add("d-none"));
+    editBtn.classList.add("d-none");
+    saveBtn.classList.remove("d-none");
+    cancelBtn.classList.remove("d-none");
+  });
+
+  cancelBtn.addEventListener("click", () => {
+    editFields.forEach(f => f.classList.add("d-none"));
+    displayTexts.forEach(d => d.classList.remove("d-none"));
+    editBtn.classList.remove("d-none");
+    saveBtn.classList.add("d-none");
+    cancelBtn.classList.add("d-none");
+  });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    const studentId = "<%= application.id %>";
+    const payload = {
+      education: form.education.value,
+      skills: form.skills.value.split(",").map(s => s.trim()),
+      interests: form.interests.value.split(",").map(i => i.trim()),
+      location: form.location.value
+    };
+
+    try {
+      const res = await fetch(`/api/edit-application/${studentId}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        alert("✅ Application updated successfully!");
+        window.location.reload();
+      } else {
+        alert("⚠️ " + result.message);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("❌ Error updating application");
+    }
+  });
+</script>

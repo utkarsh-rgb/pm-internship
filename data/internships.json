@@ -115,5 +115,779 @@
     "skills": ["seo", "python", "content marketing"],
     "sector": "Marketing",
     "locations": ["parul university, limda,waghodia"]
+  },
+  {
+    "id": 14,
+    "title": "Mobile App Developer Intern",
+    "organisation": "AppVenture",
+    "education": "Bachelors",
+    "skills": ["flutter", "dart", "android"],
+    "sector": "IT",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 15,
+    "title": "HR Intern",
+    "organisation": "PeopleFirst",
+    "education": "Bachelors",
+    "skills": ["communication", "excel", "recruitment"],
+    "sector": "HR",
+    "locations": ["Mumbai", "Pune"]
+  },
+  {
+    "id": 16,
+    "title": "Financial Analyst Intern",
+    "organisation": "FinanceHub",
+    "education": "Bachelors",
+    "skills": ["excel", "financial modeling", "analysis"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 17,
+    "title": "Video Editor Intern",
+    "organisation": "MediaCraft",
+    "education": "Any",
+    "skills": ["premiere pro", "after effects", "video editing"],
+    "sector": "Media",
+    "locations": ["Delhi", "Remote"]
+  },
+  {
+    "id": 18,
+    "title": "AI/ML Intern",
+    "organisation": "TechAI",
+    "education": "Bachelors",
+    "skills": ["python", "tensorflow", "machine learning"],
+    "sector": "Data",
+    "locations": ["Hyderabad", "Remote"]
+  },
+  {
+    "id": 19,
+    "title": "Sales Intern",
+    "organisation": "SalesForce Pro",
+    "education": "Bachelors",
+    "skills": ["communication", "crm", "sales"],
+    "sector": "Sales",
+    "locations": ["Gurgaon"]
+  },
+  {
+    "id": 20,
+    "title": "Social Media Intern",
+    "organisation": "SocialBuzz",
+    "education": "Any",
+    "skills": ["instagram", "facebook", "content creation"],
+    "sector": "Marketing",
+    "locations": ["Remote"]
+  },
+  {
+    "id": 21,
+    "title": "DevOps Intern",
+    "organisation": "CloudTech",
+    "education": "Bachelors",
+    "skills": ["docker", "aws", "kubernetes"],
+    "sector": "IT",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 22,
+    "title": "Product Management Intern",
+    "organisation": "ProductLab",
+    "education": "Bachelors",
+    "skills": ["product strategy", "analytics", "communication"],
+    "sector": "Business",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 23,
+    "title": "Cybersecurity Intern",
+    "organisation": "SecureNet",
+    "education": "Bachelors",
+    "skills": ["networking", "security", "python"],
+    "sector": "IT",
+    "locations": ["Chennai"]
+  },
+  {
+    "id": 24,
+    "title": "Research Intern",
+    "organisation": "InnovateR&D",
+    "education": "Masters",
+    "skills": ["research", "data analysis", "writing"],
+    "sector": "Research",
+    "locations": ["Delhi", "Kolkata"]
+  },
+  {
+    "id": 25,
+    "title": "E-commerce Intern",
+    "organisation": "ShopEasy",
+    "education": "Bachelors",
+    "skills": ["digital marketing", "excel", "analytics"],
+    "sector": "E-commerce",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 26,
+    "title": "Animation Intern",
+    "organisation": "AnimateStudio",
+    "education": "Any",
+    "skills": ["blender", "maya", "animation"],
+    "sector": "Media",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 27,
+    "title": "Quality Assurance Intern",
+    "organisation": "TestPro",
+    "education": "Bachelors",
+    "skills": ["testing", "selenium", "manual testing"],
+    "sector": "IT",
+    "locations": ["Pune", "Remote"]
+  },
+  {
+    "id": 28,
+    "title": "Event Management Intern",
+    "organisation": "EventMasters",
+    "education": "Any",
+    "skills": ["planning", "communication", "coordination"],
+    "sector": "Events",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 29,
+    "title": "Game Developer Intern",
+    "organisation": "GameStudio",
+    "education": "Bachelors",
+    "skills": ["unity", "c#", "game development"],
+    "sector": "Gaming",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 30,
+    "title": "Brand Management Intern",
+    "organisation": "BrandMakers",
+    "education": "Bachelors",
+    "skills": ["branding", "marketing", "design"],
+    "sector": "Marketing",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 31,
+    "title": "Legal Intern",
+    "organisation": "LawFirm Associates",
+    "education": "Law",
+    "skills": ["legal research", "writing", "analysis"],
+    "sector": "Legal",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 32,
+    "title": "IoT Developer Intern",
+    "organisation": "IoTSolutions",
+    "education": "Bachelors",
+    "skills": ["arduino", "raspberry pi", "iot"],
+    "sector": "IT",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 33,
+    "title": "Public Relations Intern",
+    "organisation": "PR Connect",
+    "education": "Bachelors",
+    "skills": ["communication", "writing", "media relations"],
+    "sector": "PR",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 34,
+    "title": "Database Administrator Intern",
+    "organisation": "DataBase Pro",
+    "education": "Bachelors",
+    "skills": ["sql", "mysql", "database management"],
+    "sector": "IT",
+    "locations": ["Chennai", "Remote"]
+  },
+  {
+    "id": 35,
+    "title": "Market Research Intern",
+    "organisation": "ResearchPro",
+    "education": "Bachelors",
+    "skills": ["research", "surveys", "data analysis"],
+    "sector": "Research",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 36,
+    "title": "Photography Intern",
+    "organisation": "PhotoWorks",
+    "education": "Any",
+    "skills": ["photography", "lightroom", "photoshop"],
+    "sector": "Media",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 37,
+    "title": "Blockchain Developer Intern",
+    "organisation": "CryptoTech",
+    "education": "Bachelors",
+    "skills": ["blockchain", "solidity", "web3"],
+    "sector": "IT",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 38,
+    "title": "Operations Intern",
+    "organisation": "OptiOps",
+    "education": "Bachelors",
+    "skills": ["operations", "process improvement", "excel"],
+    "sector": "Operations",
+    "locations": ["Gurgaon", "Noida"]
+  },
+  {
+    "id": 39,
+    "title": "Technical Writer Intern",
+    "organisation": "TechDocs",
+    "education": "Bachelors",
+    "skills": ["technical writing", "documentation", "communication"],
+    "sector": "Content",
+    "locations": ["Pune", "Remote"]
+  },
+  {
+    "id": 40,
+    "title": "Cloud Computing Intern",
+    "organisation": "CloudExperts",
+    "education": "Bachelors",
+    "skills": ["aws", "azure", "cloud architecture"],
+    "sector": "IT",
+    "locations": ["Hyderabad", "Remote"]
+  },
+  {
+    "id": 41,
+    "title": "Supply Chain Intern",
+    "organisation": "LogiChain",
+    "education": "Bachelors",
+    "skills": ["supply chain", "logistics", "excel"],
+    "sector": "Operations",
+    "locations": ["Mumbai", "Chennai"]
+  },
+  {
+    "id": 42,
+    "title": "UX Research Intern",
+    "organisation": "UserFirst",
+    "education": "Bachelors",
+    "skills": ["user research", "usability testing", "figma"],
+    "sector": "Design",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 43,
+    "title": "Investment Banking Intern",
+    "organisation": "InvestBank",
+    "education": "Masters",
+    "skills": ["financial modeling", "valuation", "excel"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 44,
+    "title": "Customer Success Intern",
+    "organisation": "ClientCare",
+    "education": "Bachelors",
+    "skills": ["customer service", "crm", "communication"],
+    "sector": "Customer Service",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 45,
+    "title": "Data Engineer Intern",
+    "organisation": "DataPipeline",
+    "education": "Bachelors",
+    "skills": ["python", "spark", "data engineering"],
+    "sector": "Data",
+    "locations": ["Pune", "Remote"]
+  },
+  {
+    "id": 46,
+    "title": "Journalism Intern",
+    "organisation": "NewsToday",
+    "education": "Bachelors",
+    "skills": ["journalism", "writing", "research"],
+    "sector": "Media",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 47,
+    "title": "Full Stack Developer Intern",
+    "organisation": "WebSolutions",
+    "education": "Bachelors",
+    "skills": ["react", "node.js", "mongodb"],
+    "sector": "IT",
+    "locations": ["Hyderabad", "Remote"]
+  },
+  {
+    "id": 48,
+    "title": "Mechanical Engineering Intern",
+    "organisation": "EngineerPro",
+    "education": "Engineering",
+    "skills": ["autocad", "solidworks", "mechanical design"],
+    "sector": "Engineering",
+    "locations": ["Chennai", "Coimbatore"]
+  },
+  {
+    "id": 49,
+    "title": "Environmental Science Intern",
+    "organisation": "EcoSolutions",
+    "education": "Bachelors",
+    "skills": ["environmental analysis", "research", "gis"],
+    "sector": "Environment",
+    "locations": ["Bangalore", "Pune"]
+  },
+  {
+    "id": 50,
+    "title": "Interior Design Intern",
+    "organisation": "SpaceDesign",
+    "education": "Any",
+    "skills": ["autocad", "sketchup", "design"],
+    "sector": "Design",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 51,
+    "title": "Pharmaceutical Research Intern",
+    "organisation": "PharmaCorp",
+    "education": "Science",
+    "skills": ["research", "laboratory skills", "data analysis"],
+    "sector": "Healthcare",
+    "locations": ["Mumbai", "Hyderabad"]
+  },
+  {
+    "id": 52,
+    "title": "Electrical Engineering Intern",
+    "organisation": "PowerTech",
+    "education": "Engineering",
+    "skills": ["circuit design", "matlab", "electrical systems"],
+    "sector": "Engineering",
+    "locations": ["Chennai", "Bangalore"]
+  },
+  {
+    "id": 53,
+    "title": "Fashion Design Intern",
+    "organisation": "StyleStudio",
+    "education": "Any",
+    "skills": ["fashion design", "illustrator", "pattern making"],
+    "sector": "Fashion",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 54,
+    "title": "Biotechnology Intern",
+    "organisation": "BioLab",
+    "education": "Science",
+    "skills": ["laboratory techniques", "research", "data analysis"],
+    "sector": "Biotechnology",
+    "locations": ["Bangalore", "Pune"]
+  },
+  {
+    "id": 55,
+    "title": "Architecture Intern",
+    "organisation": "ArchDesign",
+    "education": "Architecture",
+    "skills": ["autocad", "revit", "3d modeling"],
+    "sector": "Architecture",
+    "locations": ["Mumbai", "Pune"]
+  },
+  {
+    "id": 56,
+    "title": "Psychology Research Intern",
+    "organisation": "MindStudy",
+    "education": "Psychology",
+    "skills": ["research", "data analysis", "spss"],
+    "sector": "Research",
+    "locations": ["Delhi", "Bangalore"]
+  },
+  {
+    "id": 57,
+    "title": "Civil Engineering Intern",
+    "organisation": "BuildTech",
+    "education": "Engineering",
+    "skills": ["autocad", "structural analysis", "project management"],
+    "sector": "Engineering",
+    "locations": ["Mumbai", "Pune"]
+  },
+  {
+    "id": 58,
+    "title": "Robotics Intern",
+    "organisation": "RoboTech",
+    "education": "Engineering",
+    "skills": ["robotics", "programming", "arduino"],
+    "sector": "Robotics",
+    "locations": ["Bangalore", "Chennai"]
+  },
+  {
+    "id": 59,
+    "title": "Music Production Intern",
+    "organisation": "SoundStudio",
+    "education": "Any",
+    "skills": ["pro tools", "audio editing", "music production"],
+    "sector": "Media",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 60,
+    "title": "Data Visualization Intern",
+    "organisation": "VizPro",
+    "education": "Bachelors",
+    "skills": ["tableau", "power bi", "d3.js"],
+    "sector": "Data",
+    "locations": ["Delhi", "Remote"]
+  },
+  {
+    "id": 61,
+    "title": "Chemical Engineering Intern",
+    "organisation": "ChemTech",
+    "education": "Engineering",
+    "skills": ["process design", "chemical analysis", "matlab"],
+    "sector": "Engineering",
+    "locations": ["Mumbai", "Vadodara"]
+  },
+  {
+    "id": 62,
+    "title": "Consulting Intern",
+    "organisation": "ConsultPro",
+    "education": "Masters",
+    "skills": ["problem solving", "presentation", "excel"],
+    "sector": "Consulting",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 63,
+    "title": "Renewable Energy Intern",
+    "organisation": "GreenEnergy",
+    "education": "Engineering",
+    "skills": ["solar energy", "wind power", "sustainability"],
+    "sector": "Energy",
+    "locations": ["Gujarat", "Rajasthan"]
+  },
+  {
+    "id": 64,
+    "title": "Logistics Intern",
+    "organisation": "FastTrack",
+    "education": "Bachelors",
+    "skills": ["supply chain", "transportation", "inventory management"],
+    "sector": "Logistics",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 65,
+    "title": "Telecommunications Intern",
+    "organisation": "TeleComm",
+    "education": "Engineering",
+    "skills": ["networking", "telecommunications", "signal processing"],
+    "sector": "Telecom",
+    "locations": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": 66,
+    "title": "Food Technology Intern",
+    "organisation": "FoodTech",
+    "education": "Science",
+    "skills": ["food safety", "quality control", "research"],
+    "sector": "Food",
+    "locations": ["Mumbai", "Pune"]
+  },
+  {
+    "id": 67,
+    "title": "Real Estate Intern",
+    "organisation": "PropertyPro",
+    "education": "Bachelors",
+    "skills": ["market analysis", "property valuation", "sales"],
+    "sector": "Real Estate",
+    "locations": ["Mumbai", "Gurgaon"]
+  },
+  {
+    "id": 68,
+    "title": "Automotive Engineering Intern",
+    "organisation": "AutoTech",
+    "education": "Engineering",
+    "skills": ["automotive design", "catia", "manufacturing"],
+    "sector": "Automotive",
+    "locations": ["Chennai", "Pune"]
+  },
+  {
+    "id": 69,
+    "title": "Insurance Intern",
+    "organisation": "SecureLife",
+    "education": "Bachelors",
+    "skills": ["risk assessment", "actuarial science", "excel"],
+    "sector": "Insurance",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 70,
+    "title": "Aerospace Engineering Intern",
+    "organisation": "SkyTech",
+    "education": "Engineering",
+    "skills": ["aerospace design", "matlab", "simulation"],
+    "sector": "Aerospace",
+    "locations": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": 71,
+    "title": "Agriculture Technology Intern",
+    "organisation": "AgriTech",
+    "education": "Agriculture",
+    "skills": ["precision agriculture", "gis", "data analysis"],
+    "sector": "Agriculture",
+    "locations": ["Punjab", "Maharashtra"]
+  },
+  {
+    "id": 72,
+    "title": "Healthcare Analytics Intern",
+    "organisation": "HealthData",
+    "education": "Bachelors",
+    "skills": ["healthcare analytics", "r", "sql"],
+    "sector": "Healthcare",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 73,
+    "title": "Sports Management Intern",
+    "organisation": "SportsPro",
+    "education": "Any",
+    "skills": ["event management", "marketing", "communication"],
+    "sector": "Sports",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 74,
+    "title": "Travel & Tourism Intern",
+    "organisation": "TravelEase",
+    "education": "Any",
+    "skills": ["travel planning", "customer service", "marketing"],
+    "sector": "Tourism",
+    "locations": ["Goa", "Kerala"]
+  },
+  {
+    "id": 75,
+    "title": "Education Technology Intern",
+    "organisation": "EduTech",
+    "education": "Bachelors",
+    "skills": ["educational content", "lms", "instructional design"],
+    "sector": "EdTech",
+    "locations": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 76,
+    "title": "Startup Operations Intern",
+    "organisation": "StartupHub",
+    "education": "Any",
+    "skills": ["operations", "business development", "communication"],
+    "sector": "Startup",
+    "locations": ["Bangalore", "Mumbai"]
+  },
+  {
+    "id": 77,
+    "title": "Venture Capital Intern",
+    "organisation": "VCFund",
+    "education": "Masters",
+    "skills": ["financial analysis", "due diligence", "valuation"],
+    "sector": "Finance",
+    "locations": ["Mumbai", "Bangalore"]
+  },
+  {
+    "id": 78,
+    "title": "Non-Profit Intern",
+    "organisation": "SocialGood",
+    "education": "Any",
+    "skills": ["project management", "fundraising", "communication"],
+    "sector": "Non-Profit",
+    "locations": ["Delhi", "Mumbai"]
+  },
+  {
+    "id": 79,
+    "title": "Government Relations Intern",
+    "organisation": "PolicyLink",
+    "education": "Political Science",
+    "skills": ["policy analysis", "research", "communication"],
+    "sector": "Government",
+    "locations": ["Delhi"]
+  },
+  {
+    "id": 80,
+    "title": "Import Export Intern",
+    "organisation": "GlobalTrade",
+    "education": "Commerce",
+    "skills": ["international trade", "documentation", "logistics"],
+    "sector": "Trade",
+    "locations": ["Mumbai", "Chennai"]
+  },
+  {
+    "id": 81,
+    "title": "Tax Advisory Intern",
+    "organisation": "TaxExperts",
+    "education": "Commerce",
+    "skills": ["taxation", "accounting", "compliance"],
+    "sector": "Finance",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 82,
+    "title": "Risk Management Intern",
+    "organisation": "RiskPro",
+    "education": "Finance",
+    "skills": ["risk analysis", "financial modeling", "compliance"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 83,
+    "title": "Audit Intern",
+    "organisation": "AuditFirm",
+    "education": "Commerce",
+    "skills": ["auditing", "accounting", "excel"],
+    "sector": "Finance",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 84,
+    "title": "Banking Intern",
+    "organisation": "MegaBank",
+    "education": "Finance",
+    "skills": ["banking operations", "customer service", "financial analysis"],
+    "sector": "Banking",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 85,
+    "title": "Corporate Finance Intern",
+    "organisation": "FinanceCorp",
+    "education": "Finance",
+    "skills": ["corporate finance", "valuation", "financial modeling"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 86,
+    "title": "Data Mining Intern",
+    "organisation": "MineData",
+    "education": "Computer Science",
+    "skills": ["data mining", "python", "machine learning"],
+    "sector": "Data",
+    "locations": ["Pune", "Remote"]
+  },
+  {
+    "id": 87,
+    "title": "Network Security Intern",
+    "organisation": "NetSecure",
+    "education": "IT",
+    "skills": ["network security", "firewall", "penetration testing"],
+    "sector": "IT",
+    "locations": ["Chennai", "Bangalore"]
+  },
+  {
+    "id": 88,
+    "title": "Software Testing Intern",
+    "organisation": "TestLab",
+    "education": "Computer Science",
+    "skills": ["manual testing", "automation testing", "selenium"],
+    "sector": "IT",
+    "locations": ["Pune", "Remote"]
+  },
+  {
+    "id": 89,
+    "title": "System Administration Intern",
+    "organisation": "SysAdmin",
+    "education": "IT",
+    "skills": ["linux", "windows server", "networking"],
+    "sector": "IT",
+    "locations": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": 90,
+    "title": "Business Intelligence Intern",
+    "organisation": "BIAnalytics",
+    "education": "Analytics",
+    "skills": ["power bi", "tableau", "data warehousing"],
+    "sector": "Data",
+    "locations": ["Mumbai", "Remote"]
+  },
+  {
+    "id": 91,
+    "title": "Project Management Intern",
+    "organisation": "ProjectPro",
+    "education": "Management",
+    "skills": ["project management", "agile", "scrum"],
+    "sector": "Management",
+    "locations": ["Gurgaon", "Pune"]
+  },
+  {
+    "id": 92,
+    "title": "International Business Intern",
+    "organisation": "GlobalBiz",
+    "education": "Business",
+    "skills": ["international business", "market research", "communication"],
+    "sector": "Business",
+    "locations": ["Mumbai", "Delhi"]
+  },
+  {
+    "id": 93,
+    "title": "Compliance Intern",
+    "organisation": "ComplianceCorp",
+    "education": "Law",
+    "skills": ["regulatory compliance", "legal research", "documentation"],
+    "sector": "Legal",
+    "locations": ["Mumbai", "Bangalore"]
+  },
+  {
+    "id": 94,
+    "title": "Treasury Intern",
+    "organisation": "TreasuryDesk",
+    "education": "Finance",
+    "skills": ["treasury operations", "cash management", "forex"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 95,
+    "title": "Credit Analysis Intern",
+    "organisation": "CreditPro",
+    "education": "Finance",
+    "skills": ["credit analysis", "financial modeling", "risk assessment"],
+    "sector": "Finance",
+    "locations": ["Mumbai", "Pune"]
+  },
+  {
+    "id": 96,
+    "title": "Mergers & Acquisitions Intern",
+    "organisation": "M&A Advisors",
+    "education": "MBA",
+    "skills": ["financial modeling", "valuation", "due diligence"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 97,
+    "title": "Alternative Investments Intern",
+    "organisation": "AltInvest",
+    "education": "Finance",
+    "skills": ["private equity", "hedge funds", "portfolio management"],
+    "sector": "Finance",
+    "locations": ["Mumbai"]
+  },
+  {
+    "id": 98,
+    "title": "Quantitative Analytics Intern",
+    "organisation": "QuantLab",
+    "education": "Mathematics",
+    "skills": ["quantitative analysis", "python", "statistics"],
+    "sector": "Finance",
+    "locations": ["Mumbai", "Bangalore"]
+  },
+  {
+    "id": 99,
+    "title": "Derivatives Trading Intern",
+    "organisation": "TradeDesk",
+    "education": "Finance",
+    "skills": ["derivatives", "trading", "financial markets"],
+    "sector": "Finance",
+     "locations": ["Mumbai", "Bangalore"]
   }
 ]
