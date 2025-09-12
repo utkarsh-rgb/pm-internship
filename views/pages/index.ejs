@@ -1,20 +1,76 @@
-<!-- Welcome Section -->
-<div class="container-fluid bg-light py-4">
-  <div class="container">
-    <div class="text-center">
-      <h1 id="welcomeText" class="display-6 fw-bold text-success mb-2">Welcome Guest</h1>
-      <p class="text-muted">We're glad to have you here</p>
-    </div>
+
+<div class="pt-3">
+<!-- Moving Government Header Ticker -->
+<div class="gov-ticker pt-5" style="background-color:#fff2cc; color:#090088; padding: 10px 2px; overflow: hidden;">
+  <div class="ticker-content">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Government of India Emblem" class="emblem" style="height: 18px; width: 18px; margin-right: 8px; filter: brightness(0) saturate(100%) invert(12%) sepia(92%) saturate(7494%) hue-rotate(241deg) brightness(85%) contrast(125%);" />
+    <span style="font-weight: bold; margin-right: 20px;">Government of India | भारत सरकार</span>
+    <span style="margin-right: 20px;">🇮🇳 Ministry of Corporate Affairs</span>
+    <span style="margin-right: 20px;">📞 Helpline: 1800-123-4567</span>
+    <span style="margin-right: 20px;">✉️ Email: internship@mca.gov.in</span>
+    <span style="margin-right: 20px;">🌟 Empowering Youth • Building Future</span>
+    <span style="margin-right: 20px;">🎯 50,000+ Students</span>
+    <span style="margin-right: 20px;">🏢 2,500+ Partners</span>
+    <span>🇮🇳</span>
   </div>
 </div>
 
-<div id="carouselExample" class="carousel slide my-4" data-bs-ride="carousel">
+<style>
+  .ticker-content {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 40s linear infinite;
+    font-size: 2px;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .ticker-content:hover {
+    animation-play-state: paused;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .ticker-content {
+      font-size: 12px;
+      animation: scroll 30s linear infinite;
+    }
+    .emblem {
+      height: 16px !important;
+      width: 16px !important;
+      margin-right: 6px !important;
+    }
+  }
+
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .ticker-content {
+      font-size: 15px;
+      animation: scroll 45s linear infinite;
+    }
+  }
+</style>
+<!-- Welcome Section -->
+<div class="container-fluid bg-light py-0 py-md-4">
+  <div class="container">
+    <div class="text-center">
+      <h1 id="welcomeText" class="h3 h2-md fw-bold text-success mb-1 mb-md-2">Welcome Guest</h1>
+      <p class="text-muted small">We're glad to have you here</p>
+    </div>
+  </div>
+</div>
+<div id="carouselExample" class="carousel slide my-2 my-md-4" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img
         src="/images/gov1.jpg"
         class="d-block w-100 carousel-img"
         alt="Gov 1"
+        style="height: 200px; object-fit: cover;"
       />
     </div>
     <div class="carousel-item">
@@ -22,6 +78,7 @@
         src="/images/gov4.jpg"
         class="d-block w-100 carousel-img"
         alt="Gov 4"
+        style="height: 200px; object-fit: cover;"
       />
     </div>
     <div class="carousel-item">
@@ -29,6 +86,7 @@
         src="/images/gov2.jpg"
         class="d-block w-100 carousel-img"
         alt="Gov 2"
+        style="height: 200px; object-fit: cover;"
       />
     </div>
     <div class="carousel-item">
@@ -36,6 +94,7 @@
         src="/images/gov5.png"
         class="d-block w-100 carousel-img"
         alt="Gov 5"
+        style="height: 200px; object-fit: cover;"
       />
     </div>
     <div class="carousel-item">
@@ -43,6 +102,7 @@
         src="/images/gov3.jpg"
         class="d-block w-100 carousel-img"
         alt="Gov 3"
+        style="height: 200px; object-fit: cover;"
       />
     </div>
   </div>
@@ -74,107 +134,105 @@
   </button>
 </div>
 
-
-
 <!-- Hero Section -->
-<div class="container-fluid py-5" style="background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);">
+<div class="container-fluid py-3 py-md-5" style="background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <div class="badge bg-success fs-6 px-3 py-2 mb-3">
-          <i class="bi bi-flag-fill me-2"></i>भारत सरकार | Government of India
+        <div class="badge bg-success small px-2 px-md-3 py-1 py-md-2 mb-2 mb-md-3">
+          <i class="bi bi-flag-fill me-1 me-md-2"></i>भारत सरकार | Government of India
         </div>
-        <h1 class="display-4 fw-bold text-dark mb-3">
+        <h1 class="h2 h1-md fw-bold text-dark mb-2 mb-md-3">
           PM Internship Scheme
-          <div class="fs-4 text-primary mt-2">प्रधानमंत्री इंटर्नशिप योजना</div>
+          <div class="h6 h5-md text-primary mt-1 mt-md-2">प्रधानमंत्री इंटर्नशिप योजना</div>
         </h1>
-        <p class="lead text-dark mb-4">
-          Empowering the youth of India through opportunities.<br>
+        <p class="small lead-md text-dark mb-3 mb-md-4">
+          Empowering the youth of India through opportunities.<br class="d-none d-md-block">
           Connecting students across rural, tribal, and urban regions with meaningful internships.
         </p>
-        <div class="d-flex gap-3 flex-wrap">
-          <a href="/form" class="btn btn-success btn-lg px-4">
-            <i class="bi bi-rocket-takeoff-fill me-2"></i>Start Application
+        <div class="d-flex gap-2 gap-md-3 flex-wrap">
+          <a href="/form" class="btn btn-success btn-sm btn-md-lg px-3 px-md-4">
+            <i class="bi bi-rocket-takeoff-fill me-1 me-md-2"></i>Start Application
           </a>
-          <a href="/about" class="btn btn-outline-dark btn-lg px-4">
-            <i class="bi bi-info-circle-fill me-2"></i>Learn More
+          <a href="/about" class="btn btn-outline-dark btn-sm btn-md-lg px-3 px-md-4">
+            <i class="bi bi-info-circle-fill me-1 me-md-2"></i>Learn More
           </a>
         </div>
       </div>
-      <div class="col-lg-4 text-center mt-4 mt-lg-0">
+      <div class="col-lg-4 text-center mt-3 mt-lg-0">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
              alt="Government of India Emblem" 
              class="img-fluid" 
-             style="max-height: 250px;">
+             style="max-height: 150px; max-height-md: 250px;">
       </div>
     </div>
   </div>
 </div>
 
 <!-- Eligibility Cards -->
-<div class="container py-5">
-  <div class="text-center mb-5">
-    <h2 class="display-6 fw-bold text-primary">Eligibility Overview</h2>
-    <p class="text-muted">Check if you meet the requirements</p>
+<div class="container py-3 py-md-5">
+  <div class="text-center mb-3 mb-md-5">
+    <h2 class="h3 h2-md fw-bold text-primary">Eligibility Overview</h2>
+    <p class="text-muted small">Check if you meet the requirements</p>
   </div>
   
-  <div class="row g-4">
-    <div class="col-md-4 col-lg-2">
+  <div class="row g-2 g-md-4">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-person-check-fill fs-1 text-primary mb-3"></i>
-          <h5 class="fw-bold text-primary">Eligibility</h5>
-          <p class="text-muted mb-0">Are you eligible?</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-person-check-fill fs-3 fs-md-1 text-primary mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-primary">Eligibility</h6>
+          <p class="text-muted mb-0 small">Are you eligible?</p>
         </div>
       </div>
     </div>
     
-    <div class="col-md-4 col-lg-2">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-calendar-check-fill fs-1 text-success mb-3"></i>
-          <h5 class="fw-bold text-success">Age</h5>
-          <p class="text-muted mb-0">21–24 years</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-calendar-check-fill fs-3 fs-md-1 text-success mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-success">Age</h6>
+          <p class="text-muted mb-0 small">21–24 years</p>
         </div>
       </div>
     </div>
     
-    <div class="col-md-4 col-lg-2">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-book-fill fs-1 text-info mb-3"></i>
-          <h5 class="fw-bold text-info">Status</h5>
-          <p class="text-muted mb-0">Student</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-book-fill fs-3 fs-md-1 text-info mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-info">Status</h6>
+          <p class="text-muted mb-0 small">Student</p>
         </div>
       </div>
     </div>
     
-    <div class="col-md-4 col-lg-2">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-mortarboard-fill fs-1 text-danger mb-3"></i>
-          <h5 class="fw-bold text-danger">Education</h5>
-          <p class="text-muted mb-0">Bachelor's</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-mortarboard-fill fs-3 fs-md-1 text-danger mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-danger">Education</h6>
+          <p class="text-muted mb-0 small">Bachelor's</p>
         </div>
       </div>
     </div>
     
-    <div class="col-md-4 col-lg-2">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-geo-alt-fill fs-1 text-warning mb-3"></i>
-          <h5 class="fw-bold text-warning">Location</h5>
-          <p class="text-muted mb-0">India</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-geo-alt-fill fs-3 fs-md-1 text-warning mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-warning">Location</h6>
+          <p class="text-muted mb-0 small">India</p>
         </div>
       </div>
     </div>
     
-    <div class="col-md-4 col-lg-2">
+    <div class="col-6 col-md-4 col-lg-2">
       <div class="card h-100 border-0 shadow-sm text-center">
-        <div class="card-body py-4">
-          <i class="bi bi-briefcase-fill fs-1 text-secondary mb-3"></i>
-          <h5 class="fw-bold text-secondary">Type</h5>
-          <p class="text-muted mb-0">Full-time</p>
+        <div class="card-body py-2 py-md-4">
+          <i class="bi bi-briefcase-fill fs-3 fs-md-1 text-secondary mb-1 mb-md-3"></i>
+          <h6 class="h5-md fw-bold text-secondary">Type</h6>
+          <p class="text-muted mb-0 small">Full-time</p>
         </div>
       </div>
     </div>
@@ -182,58 +240,58 @@
 </div>
 
 <!-- Statistics Section -->
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-3 py-md-5">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-6 fw-bold text-primary">Transforming India's Youth</h2>
-      <p class="text-muted lead">Making a real impact across the nation</p>
+    <div class="text-center mb-3 mb-md-5">
+      <h2 class="h3 h2-md fw-bold text-primary">Transforming India's Youth</h2>
+      <p class="text-muted small lead-md">Making a real impact across the nation</p>
     </div>
     
-    <div class="row g-4 text-center">
-      <div class="col-md-6 col-lg-3">
+    <div class="row g-2 g-md-4 text-center">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card border-0 shadow h-100">
-          <div class="card-body py-5">
-            <div class="text-success mb-3">
-              <i class="bi bi-people-fill display-1"></i>
+          <div class="card-body py-3 py-md-5">
+            <div class="text-success mb-2 mb-md-3">
+              <i class="bi bi-people-fill fs-2 fs-md-1"></i>
             </div>
-            <h3 class="fw-bold text-primary">50,000+</h3>
-            <p class="text-muted mb-0">Students Registered</p>
+            <h4 class="h3-md fw-bold text-primary">50,000+</h4>
+            <p class="text-muted mb-0 small">Students Registered</p>
           </div>
         </div>
       </div>
       
-      <div class="col-md-6 col-lg-3">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card border-0 shadow h-100">
-          <div class="card-body py-5">
-            <div class="text-warning mb-3">
-              <i class="bi bi-building-fill display-1"></i>
+          <div class="card-body py-3 py-md-5">
+            <div class="text-warning mb-2 mb-md-3">
+              <i class="bi bi-building-fill fs-2 fs-md-1"></i>
             </div>
-            <h3 class="fw-bold text-primary">2,500+</h3>
-            <p class="text-muted mb-0">Partner Organizations</p>
+            <h4 class="h3-md fw-bold text-primary">2,500+</h4>
+            <p class="text-muted mb-0 small">Partner Organizations</p>
           </div>
         </div>
       </div>
       
-      <div class="col-md-6 col-lg-3">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card border-0 shadow h-100">
-          <div class="card-body py-5">
-            <div class="text-info mb-3">
-              <i class="bi bi-geo-alt-fill display-1"></i>
+          <div class="card-body py-3 py-md-5">
+            <div class="text-info mb-2 mb-md-3">
+              <i class="bi bi-geo-alt-fill fs-2 fs-md-1"></i>
             </div>
-            <h3 class="fw-bold text-primary">28</h3>
-            <p class="text-muted mb-0">States & UTs Covered</p>
+            <h4 class="h3-md fw-bold text-primary">28</h4>
+            <p class="text-muted mb-0 small">States & UTs Covered</p>
           </div>
         </div>
       </div>
       
-      <div class="col-md-6 col-lg-3">
+      <div class="col-6 col-md-6 col-lg-3">
         <div class="card border-0 shadow h-100">
-          <div class="card-body py-5">
-            <div class="text-danger mb-3">
-              <i class="bi bi-award-fill display-1"></i>
+          <div class="card-body py-3 py-md-5">
+            <div class="text-danger mb-2 mb-md-3">
+              <i class="bi bi-award-fill fs-2 fs-md-1"></i>
             </div>
-            <h3 class="fw-bold text-primary">95%</h3>
-            <p class="text-muted mb-0">Success Rate</p>
+            <h4 class="h3-md fw-bold text-primary">95%</h4>
+            <p class="text-muted mb-0 small">Success Rate</p>
           </div>
         </div>
       </div>
@@ -242,37 +300,133 @@
 </div>
 
 <!-- Call to Action -->
-<div class="container-fluid py-5 text-white text-center" style="background: linear-gradient(135deg, #138808 0%, #ff9933 100%);">
+<div class="container-fluid py-3 py-md-5 text-white text-center" style="background: linear-gradient(135deg, #138808 0%, #ff9933 100%);">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <h2 class="display-5 fw-bold mb-3">Ready to Shape Your Future?</h2>
-        <p class="lead mb-4">Join thousands of students already benefiting from the PM Internship Scheme</p>
-        <a href="/form" class="btn btn-light btn-lg px-5 py-3 fw-bold shadow">
-          <i class="bi bi-arrow-right-circle-fill me-2"></i>Apply Now
+        <h2 class="h3 h2-md fw-bold mb-2 mb-md-3">Ready to Shape Your Future?</h2>
+        <p class="small lead-md mb-3 mb-md-4">Join thousands of students already benefiting from the PM Internship Scheme</p>
+        <a href="/form" class="btn btn-light btn-sm btn-md-lg px-3 px-md-5 py-2 py-md-3 fw-bold shadow">
+          <i class="bi bi-arrow-right-circle-fill me-1 me-md-2"></i>Apply Now
         </a>
       </div>
     </div>
   </div>
 </div>
 
+</div>
+<style>
+/* Custom responsive classes */
+@media (min-width: 768px) {
+  .h1-md { font-size: calc(1.375rem + 1.5vw) !important; }
+  .h2-md { font-size: calc(1.325rem + 0.9vw) !important; }
+  .h3-md { font-size: calc(1.3rem + 0.6vw) !important; }
+  .h5-md { font-size: 1.25rem !important; }
+  .lead-md { font-size: 1.25rem !important; font-weight: 300; }
+  .btn-md-lg { 
+    padding: 0.5rem 1rem !important; 
+    font-size: 1.125rem !important; 
+  }
+  .fs-md-1 { font-size: 2.5rem !important; }
+  .max-height-md { max-height: 250px !important; }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  .carousel-img {
+    height: 150px !important;
+  }
+  
+  .badge {
+    font-size: 0.7rem !important;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.75rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .card-body {
+    padding: 0.75rem !important;
+  }
+  
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  
+  .row > * {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  .h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  .h6 {
+    font-size: 0.9rem !important;
+  }
+  
+  .small {
+    font-size: 0.8rem !important;
+  }
+  
+  .carousel-img {
+    height: 120px !important;
+  }
+  
+  .btn-sm {
+    padding: 0.2rem 0.6rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .badge {
+    font-size: 0.65rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+  
+  .fs-3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Icon size adjustments */
+.bi {
+  vertical-align: -0.125em;
+}
+
+/* Ensure proper card spacing on mobile */
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+</style>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    // Note: In production, avoid localStorage in server-side rendering
-    // This is just for client-side personalization
-    const studentName = sessionStorage.getItem("studentName");
+    const studentName = sessionStorage.getItem("studentName") || localStorage.getItem("studentName");
     if (studentName) {
       document.getElementById("welcomeText").textContent = "Welcome " + studentName;
     }
   });
-
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    const studentName = localStorage.getItem("studentName");
-    if (studentName) {
-      document.getElementById("welcomeText").textContent =
-        "Welcome " + studentName;
-    }
-  });
-
 </script>

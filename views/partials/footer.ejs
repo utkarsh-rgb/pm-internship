@@ -1,69 +1,238 @@
-<footer class="bg-dark text-white mt-4 ">
+<footer class="bg-dark text-white mt-2 mt-md-4">
   <!-- Main Footer -->
-  <div class="container py-2">
+  <div class="container py-2 py-md-3">
     <div class="row text-center text-md-start">
       <!-- Government Branding -->
-      <div class="col-lg-4 col-md-6 mb-3 text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
-             alt="Government of India Emblem" 
-             class="mb-2 text-center"
-              
-             style="height: 35px; width: 35px; filter: brightness(0) invert(1);">
+      <div class="col-12 col-sm-6 col-lg-4 mb-2 mb-md-3 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg"
+             alt="Government of India Emblem"
+             class="mb-1 mb-md-2"
+             style="height: 25px; width: 25px; filter: brightness(0) invert(1);">
         <div>
-          <h6 class="fw-bold mb-0">Government of India</h6>
-          <small>भारत सरकार</small>
+          <h6 class="fw-bold mb-0 footer-title">Government of India</h6>
+          <small class="footer-subtitle">भारत सरकार</small>
         </div>
       </div>
-
+      
       <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6 mb-3">
-        <h6 class="fw-bold mb-2">Quick Links</h6>
+      <div class="col-6 col-sm-3 col-lg-2 mb-2 mb-md-3">
+        <h6 class="fw-bold mb-1 mb-md-2 footer-title">Quick Links</h6>
         <ul class="list-unstyled mb-0">
-          <li><a href="/" class="text-light text-decoration-none small">Home</a></li>
-          <li><a href="/form" class="text-light text-decoration-none small">Apply</a></li>
-          <li><a href="/about" class="text-light text-decoration-none small">About</a></li>
-          <li><a href="/contact" class="text-light text-decoration-none small">Contact</a></li>
+          <li class="mb-1"><a href="/" class="text-light text-decoration-none footer-link">Home</a></li>
+          <li class="mb-1"><a href="/form" class="text-light text-decoration-none footer-link">Apply</a></li>
+          <li class="mb-1"><a href="/about" class="text-light text-decoration-none footer-link">About</a></li>
+          <li><a href="/contact" class="text-light text-decoration-none footer-link">Contact</a></li>
         </ul>
       </div>
-
+      
       <!-- Government Links -->
-      <div class="col-lg-3 col-md-6 mb-3">
-        <h6 class="fw-bold mb-2">Government Links</h6>
+      <div class="col-6 col-sm-3 col-lg-3 mb-2 mb-md-3">
+        <h6 class="fw-bold mb-1 mb-md-2 footer-title">Government Links</h6>
         <ul class="list-unstyled mb-0">
-          <li><a href="https://www.india.gov.in" target="_blank" class="text-light text-decoration-none small">India Portal</a></li>
-          <li><a href="https://www.mca.gov.in" target="_blank" class="text-light text-decoration-none small">MCA Website</a></li>
-          <li><a href="https://digitalindia.gov.in" target="_blank" class="text-light text-decoration-none small">Digital India</a></li>
-          <li><a href="https://www.mygov.in" target="_blank" class="text-light text-decoration-none small">MyGov</a></li>
+          <li class="mb-1"><a href="https://www.india.gov.in" target="_blank" class="text-light text-decoration-none footer-link">India Portal</a></li>
+          <li class="mb-1"><a href="https://www.mca.gov.in" target="_blank" class="text-light text-decoration-none footer-link">MCA Website</a></li>
+          <li class="mb-1"><a href="https://digitalindia.gov.in" target="_blank" class="text-light text-decoration-none footer-link">Digital India</a></li>
+          <li><a href="https://www.mygov.in" target="_blank" class="text-light text-decoration-none footer-link">MyGov</a></li>
         </ul>
       </div>
-
+      
       <!-- Contact Info -->
-      <div class="col-lg-3 col-md-6 mb-3">
-        <h6 class="fw-bold mb-2">Contact</h6>
-        <p class="small mb-1">
+      <div class="col-12 col-sm-12 col-lg-3 mb-2 mb-md-3">
+        <h6 class="fw-bold mb-1 mb-md-2 footer-title">Contact</h6>
+        <p class="footer-contact mb-1">
           <i class="bi bi-envelope-fill me-1"></i>internship@mca.gov.in
         </p>
-        <p class="small mb-1">
+        <p class="footer-contact mb-1">
           <i class="bi bi-telephone-fill me-1"></i>1800-XXX-XXXX
         </p>
-        <p class="small mb-0">
+        <p class="footer-contact mb-0">
           <i class="bi bi-clock-fill me-1"></i>Mon-Fri: 9:00 AM - 6:00 PM
         </p>
       </div>
     </div>
   </div>
-
+  
   <!-- Bottom Bar -->
   <div class="border-top border-secondary">
-    <div class="container py-2">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
-        <p class="mb-1 mb-md-0">&copy; <%= new Date().getFullYear() %> PM Internship Recommendation Engine | <strong>Ministry of Corporate Affairs</strong>, Govt. of India</p>
-        <div class="d-flex gap-2 mt-1 mt-md-0">
-          <a href="/privacy" class="text-light text-decoration-none">Privacy</a>
-          <a href="/terms" class="text-light text-decoration-none">Terms</a>
-          <a href="/accessibility" class="text-light text-decoration-none">Accessibility</a>
+    <div class="container py-1 py-md-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-1 mb-md-0 footer-copyright text-center text-md-start">
+          &copy; <%= new Date().getFullYear() %> PM Internship Recommendation Engine | 
+          <strong>Ministry of Corporate Affairs</strong>, Govt. of India
+        </p>
+        <div class="d-flex gap-2 gap-md-3 mt-1 mt-md-0 flex-wrap justify-content-center">
+          <a href="/privacy" class="text-light text-decoration-none footer-bottom-link">Privacy</a>
+          <a href="/terms" class="text-light text-decoration-none footer-bottom-link">Terms</a>
+          <a href="/accessibility" class="text-light text-decoration-none footer-bottom-link">Accessibility</a>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+/* Footer responsive typography */
+.footer-title {
+  font-size: 0.9rem;
+}
+
+.footer-subtitle {
+  font-size: 0.75rem;
+}
+
+.footer-link {
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107 !important;
+}
+
+.footer-contact {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+}
+
+.footer-bottom-link {
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Mobile specific styles */
+@media (max-width: 576px) {
+  .footer-title {
+    font-size: 0.85rem;
+  }
+  
+  .footer-subtitle {
+    font-size: 0.7rem;
+  }
+  
+  .footer-link {
+    font-size: 0.75rem;
+  }
+  
+  .footer-contact {
+    font-size: 0.75rem;
+  }
+  
+  .footer-copyright {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+  
+  .footer-bottom-link {
+    font-size: 0.7rem;
+  }
+  
+  /* Tighter spacing on mobile */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Government emblem smaller on mobile */
+  footer img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  
+  /* Reduce gaps between elements */
+  .d-flex.gap-2 {
+    gap: 0.5rem !important;
+  }
+  
+  /* Stack contact info more compactly */
+  .footer-contact {
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .footer-title {
+    font-size: 0.8rem;
+  }
+  
+  .footer-link {
+    font-size: 0.7rem;
+  }
+  
+  .footer-contact {
+    font-size: 0.7rem;
+  }
+  
+  .footer-copyright {
+    font-size: 0.65rem;
+  }
+  
+  .footer-bottom-link {
+    font-size: 0.65rem;
+  }
+}
+
+/* Medium screens adjustments */
+@media (min-width: 768px) {
+  .footer-title {
+    font-size: 1rem;
+  }
+  
+  .footer-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .footer-link {
+    font-size: 0.9rem;
+  }
+  
+  .footer-contact {
+    font-size: 0.9rem;
+  }
+  
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom-link {
+    font-size: 0.85rem;
+  }
+  
+  /* Larger emblem on desktop */
+  footer img {
+    height: 35px !important;
+    width: 35px !important;
+  }
+}
+
+/* Ensure proper alignment */
+.text-center.text-md-start {
+  text-align: center !important;
+}
+
+@media (min-width: 768px) {
+  .text-center.text-md-start {
+    text-align: left !important;
+  }
+}
+
+/* Improve link spacing in bottom bar */
+.d-flex.flex-wrap a:not(:last-child)::after {
+  content: "";
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .d-flex.flex-wrap a:not(:last-child)::after {
+    margin-left: 0.25rem;
+  }
+}
+</style>
