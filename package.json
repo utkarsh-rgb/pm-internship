@@ -9,7 +9,7 @@
   "dev": "nodemon server.js"
 }
 
-  },
+  {
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,4 +22,4 @@
     "mysql2": "^3.14.5",
     "path": "^0.12.7"
   }
-}
+
