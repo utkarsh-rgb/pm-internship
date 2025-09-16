@@ -322,7 +322,7 @@ loginForm.addEventListener("submit", async (e) => {
   loginSpinner.classList.remove("d-none");
   
   try {
-    const res = await fetch("http://localhost:3000/login", {
+    const res = await fetch("/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
