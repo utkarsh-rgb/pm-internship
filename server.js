@@ -4,6 +4,7 @@ const expressLayouts = require("express-ejs-layouts");
 const mysql = require("mysql2");
 const app = express();
 
+require('dotenv').config();
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
@@ -17,23 +18,20 @@ app.set("views", path.join(__dirname, "views/pages"));
 app.set("layout", "../layout/main");
 app.use(expressLayouts);
 
-// ===== Database (Promise-based) =====
+
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "12345678",
-  database: "pm_internship"
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT
 }).promise();
 
 // Test connection
-(async () => {
-  try {
-    const [rows] = await db.query("SELECT 1");
-    console.log("✅ MySQL connected, test query success:", rows);
-  } catch (err) {
-    console.error("❌ MySQL connection failed:", err);
-  }
-})();
+db.connect()
+  .then(() => console.log("✅ Connected to RDS using .env"))
+  .catch(err => console.error("❌ Connection failed:", err));
+
 
 // ===== Routes =====
 
